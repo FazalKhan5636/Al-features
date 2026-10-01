@@ -12,7 +12,7 @@ export default function Footer() {
           Crafted with{" "}
           <span className="text-rose-500 dark:text-rose-400">❤</span> by{" "}
           <span className="font-medium text-zinc-700 dark:text-zinc-300">
-            Yasir Fazal Khan
+            Yasir Khan
           </span>
         </p>
       </div>

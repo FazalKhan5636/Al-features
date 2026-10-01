@@ -71,7 +71,7 @@ export default function Sidebar({ onNavigate }) {
         <p className="font-medium text-zinc-700 dark:text-zinc-300">
           Crafted with ❤ 
         </p>
-        <p className="mt-0.5">By Yasir Fazal Khan.</p>
+        <p className="mt-0.5">By Yasir Khan.</p>
       </div>
     </div>
   );
