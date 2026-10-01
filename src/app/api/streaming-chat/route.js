@@ -1,4 +1,4 @@
-import openClient from "@/lib/open-router";
+import getOpenClient from "@/lib/open-router";
 
 const MODEL = "nvidia/nemotron-3-ultra-550b-a55b:free";
 
@@ -20,7 +20,7 @@ export async function POST(request) {
   let completion;
 
   try {
-    completion = await openClient.chat.completions.create(
+    completion = await getOpenClient().chat.completions.create(
       {
         model: MODEL,
         messages: chatMessages,

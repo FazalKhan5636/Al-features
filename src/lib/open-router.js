@@ -1,8 +1,19 @@
+// import OpenAI from "openai";
+
+// const openClient = new OpenAI({
+//     apiKey: process.env.OPENROUTER_API_KEY,
+//     baseURL: "https://openrouter.ai/api/v1",
+// });
+
+// export default openClient;
+
 import OpenAI from "openai";
 
-const openClient = new OpenAI({
+const getOpenClient = () => {
+  return new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,
     baseURL: "https://openrouter.ai/api/v1",
-});
+  });
+};
 
-export default openClient;
+export default getOpenClient;

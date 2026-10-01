@@ -1,4 +1,4 @@
-import openClient from "@/lib/open-router";
+import getOpenClient from "@/lib/open-router";
 
 const PURPOSE_SUBJECTS = {
   "meeting-request": "Request for a quick meeting",
@@ -61,7 +61,7 @@ export async function POST(request) {
       }
     `;
 
-    const response = await openClient.chat.completions.create({
+    const response = await getOpenClient().chat.completions.create({
       model: "openai/gpt-oss-20b:free",
 
       messages: [

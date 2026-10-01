@@ -1,5 +1,4 @@
-import openClient from "@/lib/open-router";
-
+import getOpenClient from "@/lib/open-router";
 // Free-tier models often ignore "valid JSON only" and emit raw control
 // characters (literal newlines/tabs) inside string values, which
 // JSON.parse rejects. Escape control chars found strictly inside string
@@ -98,7 +97,7 @@ export async function POST(request) {
       Keep "title" short. Order issues from most to least severe.
     `;
 
-    const response = await openClient.chat.completions.create({
+    const response = await getOpenClient().chat.completions.create({
       model: "openai/gpt-oss-20b:free",
       messages: [
         {
