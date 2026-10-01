@@ -8,7 +8,7 @@ export default function Home() {
     <div className="mx-auto max-w-5xl px-4 py-10 lg:px-8 lg:py-14">
       <div className="mb-10">
         <h1 className="text-2xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50">
-          Welcome to AI Feature Lab
+          Welcome to AI Feature Lab.
         </h1>
         <p className="mt-1.5 max-w-xl text-sm text-zinc-500 dark:text-zinc-400">
           A growing collection of AI-powered tools. Pick a feature from the
