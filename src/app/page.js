@@ -11,7 +11,7 @@ export default function Home() {
           Welcome to AI Feature Lab.
         </h1>
         <p className="mt-1.5 max-w-xl text-sm text-zinc-500 dark:text-zinc-400">
-          A growing collection of AI-powered tools. Pick a feature from the
+          A growing collection of AI-powered tools. Click to pick a feature from the
           sidebar, or jump in below.
         </p>
       </div>
